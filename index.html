@@ -1,58 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic page setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aine’s Homemade Hot Chocolate Recipe</title>
-  <meta name="description" content="Learn how to make rich and cozy hot chocolate from scratch with this easy recipe." />
+  
+  <!-- Title for browser tab -->
+  <title>Hot Chocolate Heaven</title>
+  
+  <!-- SEO description -->
+  <meta name="description" content="A cozy website sharing a delicious homemade hot chocolate recipe." />
+  
+  <!-- Link to CSS stylesheet -->
   <link rel="stylesheet" href="style.css" />
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#ffffff">
-    <style>
-        body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f8f8;
-        color: #333;
-        margin: 0;
-        padding: 20px;
-        }
-        header {
-        text-align: center;
-        margin-bottom: 20px;
-        }
-        h1 {
-        color: #d2691e;
-        }
-        .ingredients, .instructions {
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-        color: #d2691e;
-        }
-        ul, ol {
-        margin-left: 20px;
-        }
-        footer {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 0.9em;
-        }
-    </style>
+  
+  <!-- Favicon links -->
+  <link rel="icon" href="favicon (2).ico" type="image/png" />
+  <meta name="theme-color" content="#ffffff" />
 </head>
+
 <body>
+  <!-- Header section -->
   <header>
-    <h1>Aine’s Homemade Hot Chocolate</h1>
+    <h1>Hot Chocolate Heaven</h1>
     <p>Simple, warm, and perfect for a cozy day in ☕</p>
   </header>
 
+  <!-- Hero Image Section -->
+  <section class="image">
+    <!-- Accessible alt text added -->
+    <img src="assets/image.jpg" class="banner" alt="A cozy mug of hot chocolate with marshmallows and cookies beside Scrabble letters spelling 'Taste Me'" />
+
+  </section>
+
+  <!-- Recipe Ingredients Section -->
   <main>
+    <!-- Ingredients -->
     <section class="ingredients">
       <h2>What You'll Need</h2>
       <ul>
@@ -64,6 +47,7 @@
       </ul>
     </section>
 
+    <!-- Recipe Instructions -->
     <section class="instructions">
       <h2>How to Make It</h2>
       <ol>
@@ -74,8 +58,30 @@
         <li>Serve hot in your favorite mug. Top with whipped cream or marshmallows, and enjoy!</li>
       </ol>
     </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+      <h2>Tell Us What You Think</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <!-- Input for name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <!-- Input for email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Text area for message -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Submit button -->
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </main>
 
+  <!-- Footer section -->
   <footer>
     <p>Crafted with care by Aine Duffy &copy; 2025</p>
   </footer>
